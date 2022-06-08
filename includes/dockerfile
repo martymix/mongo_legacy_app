@@ -26,5 +26,5 @@ EXPOSE 443
 WORKDIR /var/www/html/
 
 # Pull in latest source from GitHub
-RUN git clone https://github.com/jscanzoni/mongo_legacy_app.git .
+RUN git clone https://github.com/martymix/mongo_legacy_app.git .
 RUN composer require mongodb/mongodb
