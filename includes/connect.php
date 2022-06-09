@@ -70,7 +70,9 @@ $webhook_actionDescription = $config["app_settings"]["webhook"]["actionDescripti
 $webhook_processPageDescription = $config["app_settings"]["webhook"]["processPageDescription"];
 
 
+
 function clean_data($data) {
+    $data = strip_tags($data);
     $data = htmlspecialchars($data);
     $data = stripslashes($data);
     $data = trim($data);
